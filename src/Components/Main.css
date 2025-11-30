@@ -1,0 +1,88 @@
+.hello {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* width: 80%; */
+    background: #000000;
+    color: #fff;
+
+}
+
+.bolder {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: calc(50% - 10%);
+    padding: 10px;
+
+}
+
+.web-text {
+    width: 90%;
+    font-size: 15px;
+    color: #ccc;
+}
+
+
+.side-image {
+    height: 500px;
+    /* box-shadow: 0 0 10px #329696 */
+}
+
+.dev {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hello-text {
+    padding-top: 10px;
+    font-size: 37px;
+    font-weight: bolder;
+    color: #2bc5c5;
+    
+}
+
+.ww {
+    padding-left: 1.5vw ;
+}
+.name-text {
+    font-size: 37px;
+    font-weight: bolder;
+    color: #ffffff;
+    padding-bottom: 1vw;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.visit-projects {
+    cursor: pointer;
+    padding: 9px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #51c4c4,#241483);
+    box-shadow: 10px 10px 30px 0.3px #0e4d4d;
+    
+    
+}
+
+.visit-resume {
+    box-shadow: 10px 10px 40px 0.8px #2b2b2b;
+    cursor: pointer;
+    padding: 7px 13px;
+    border-radius: 20px;
+    border: none;
+    background: #154558;
+    text-decoration: none;
+    color: #fffefe;
+    
+}

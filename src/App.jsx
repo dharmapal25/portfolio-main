@@ -1,16 +1,18 @@
-// import React from 'react'
-// import Home from './Componants/Home'
-// import './App.css';
+import React from 'react'
+import './App.css';
+import Home from './Components/Home';
+import Main from './Components/Main';
 
-// function App() {
+function App() {
 
 
-//   return (
+    return (
 
-//     <div id='mainClass' >
-//       <Home/>
-//     </div>
-//   )
-// }
+        <div id='mainClass' >
+            <Home/>
+            <Main/>
+        </div>
+    )
+}
 
-// export default App
+export default App
