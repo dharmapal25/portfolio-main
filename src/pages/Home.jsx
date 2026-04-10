@@ -1,0 +1,67 @@
+import { useNavigate } from 'react-router-dom'
+import '../styles/Home.css'
+
+export default function Home() {
+  const navigate = useNavigate()
+
+  return (
+    <main className="home">
+      {/* BACKGROUND GRID */}
+      <div className="home__bg" />
+
+      <div className="home__content">
+
+        {/* GREETING */}
+        <p className="home__greeting">// Hello, World!</p>
+
+        {/* NAME */}
+        <h1 className="home__name">
+          Dharmapal.<span className="cursor">_</span>
+        </h1>
+
+        {/* ROLE */}
+        <h2 className="home__role">
+          <span>Full-Stack</span> Developer.
+        </h2>
+
+        {/* TECH STACK PILLS */}
+        <div className="home__stack">
+          {['MERN Stack', 'Socket.IO', 'React', 'Node.js', 'MongoDB'].map(t => (
+            <span key={t} className="home__stack-pill">{t}</span>
+          ))}
+        </div>
+
+        {/* TAGLINE */}
+        <p className="home__tagline">
+          I build fast, scalable, real-world web apps —<br />
+          from pixel-perfect UIs to production-ready backends.
+        </p>
+
+        {/* CTA BUTTONS */}
+        <div className="home__buttons">
+          <button
+            className="btn-secondary"
+            onClick={() => navigate('/projects')}
+          >
+            View My Work →
+          </button>
+          <button
+            className="btn-primary"
+            onClick={() => navigate('/contact')}
+          >
+            Let's Connect
+          </button>
+        </div>
+      </div>
+
+      {/* SCROLL INDICATOR */}
+      <div
+        className="home__scroll"
+        onClick={() => navigate('/about')}
+      >
+        <span>Scroll</span>
+        <div className="home__scroll-line" />
+      </div>
+    </main>
+  )
+}

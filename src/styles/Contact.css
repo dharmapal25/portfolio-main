@@ -1,0 +1,129 @@
+/* ═══════════════════════════════════════
+   CONTACT CSS
+   ═══════════════════════════════════════ */
+
+.contact {
+  min-height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact__inner {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeUp 0.7s ease both;
+}
+
+.contact__overline {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.contact__heading {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+
+.contact__heading span { color: var(--accent); }
+
+.contact__body {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 44px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* EMAIL BUTTON */
+.contact__email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  margin-bottom: 56px;
+}
+
+.contact__email-btn:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 32px var(--accent-glow);
+  transform: translateY(-3px);
+}
+
+/* SOCIAL LINKS */
+.contact__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.contact__social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.contact__social-link:hover {
+  color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.contact__social-icon {
+  font-size: 22px;
+}
+
+.contact__social-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* DIVIDER */
+.contact__divider {
+  width: 1px;
+  height: 32px;
+  background: var(--border);
+}
+
+/* FOOTER LINE */
+.contact__footer {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 16px;
+  letter-spacing: 0.5px;
+}
+
+.contact__footer a {
+  color: var(--accent);
+  transition: opacity var(--transition);
+}
+
+.contact__footer a:hover { opacity: 0.75; }

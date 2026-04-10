@@ -1,0 +1,178 @@
+/* ═══════════════════════════════════════
+   HOME / HERO CSS
+   ═══════════════════════════════════════ */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--nav-height);
+}
+
+/* ── BACKGROUND GRID ── */
+.home__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 0;
+}
+
+/* Radial glow center */
+.home__bg::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #64ffda0f 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── CONTENT ── */
+.home__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+/* GREETING */
+.home__greeting {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.1s;
+}
+
+/* NAME */
+.home__name {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 8vw, 82px);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.05;
+  margin-bottom: 10px;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.2s;
+}
+
+/* CURSOR BLINK */
+.home__name .cursor {
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+/* ROLE */
+.home__role {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.5vw, 38px);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.3s;
+}
+
+.home__role span {
+  color: var(--accent);
+}
+
+/* TAGLINE */
+.home__tagline {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 500px;
+  line-height: 1.8;
+  margin-bottom: 44px;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.4s;
+}
+
+/* BUTTONS */
+.home__buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.5s;
+}
+
+/* SCROLL INDICATOR */
+.home__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: fadeIn 1s ease both;
+  animation-delay: 1s;
+  cursor: pointer;
+}
+
+.home__scroll span {
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home__scroll-line {
+  width: 1px;
+  height: 52px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollDown 1.6s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+  50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
+  100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+}
+
+/* TECH STACK PILL ROW */
+.home__stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.45s;
+}
+
+.home__stack-pill {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .home__content { padding: 0 20px; }
+  .home__buttons { flex-direction: column; align-items: flex-start; }
+  .home__buttons .btn-primary,
+  .home__buttons .btn-secondary { width: 100%; justify-content: center; }
+}
