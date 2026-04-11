@@ -1,5 +1,5 @@
 import '../styles/About.css'
-
+import photo from "../../public/assets/photo.jpg"
 const facts = [
   'LIT Lucknow — B.Tech CSE',
   '2nd Year Student',
@@ -53,11 +53,11 @@ export default function About() {
                   <img src="/assets/photo.jpg" alt="Dharmapal" />
                 */}
                 <div className="about__photo-placeholder">
-                  <div className="avatar-icon">👨‍💻</div>
-                  <span>Add your photo here</span>
-                  <code style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                    /public/assets/photo.jpg
-                  </code>
+                  {/* <div className="avatar-icon">👨‍💻</div> */}
+                  {/* <span>Add your photo here</span> */}
+                  {/* <code> */}
+                    <img src={photo} draggable="false" />
+                  {/* </code> */}
                 </div>
               </div>
             </div>

@@ -13,14 +13,14 @@
 :root {
   --bg-primary: #090e1a;
   --bg-surface: #0f1729;
-  --bg-card: #131e35;
+  --bg-card: #080808;
   --border: #1e2d47;
   --text-primary: #dbdbdb;
   --text-secondary: #888888;
   --text-muted: #4a607e;
   --accent: #e67147e1;
   --orange : #e66435;
-  --accent-dim: #64ffda14;
+  --accent-dim: #ffc8b411;
   --accent-glow: #64ffda26;
 
   --font-display: 'Fira Code', monospace;

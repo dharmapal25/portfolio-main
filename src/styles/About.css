@@ -16,6 +16,7 @@
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 380px;
+  grid-column: 2;
   gap: 72px;
   align-items: center;
 }
@@ -138,6 +139,7 @@
 @media (max-width: 900px) {
   .about__grid {
     grid-template-columns: 1fr;
+    direction: ltr;
     gap: 48px;
   }
   .about__photo-wrap {
