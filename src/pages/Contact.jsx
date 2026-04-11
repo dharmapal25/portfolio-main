@@ -1,8 +1,14 @@
+import { LiaLinkedin } from 'react-icons/lia'
 import '../styles/Contact.css'
+import { GrGithub } from 'react-icons/gr'
+import { BiX } from 'react-icons/bi'
+import { FaX } from 'react-icons/fa6'
+import { PiXLogo } from 'react-icons/pi'
 
 export default function Contact() {
   return (
     <section className="contact">
+      <title>Contact Us</title>
       <div className="container">
         <div className="contact__inner">
 
@@ -23,7 +29,7 @@ export default function Contact() {
             href="mailto:dharmapal@email.com"
             className="contact__email-btn"
           >
-            📬 Say Hello
+           Say Hello
           </a>
 
           {/* SOCIAL LINKS */}
@@ -34,7 +40,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="contact__social-icon">⌥</span>
+              <span className="contact__social-icon"> <GrGithub style={{ width: "25px", height: "30px", fill: "#c0c0c0ff" }} /> </span>
               <span className="contact__social-label">GitHub</span>
             </a>
 
@@ -46,7 +52,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="contact__social-icon">in</span>
+              <span className="contact__social-icon"> <LiaLinkedin style={{ width: "35px", height: "30px", fill: "#96afffea" }} /> </span>
               <span className="contact__social-label">LinkedIn</span>
             </a>
 
@@ -58,7 +64,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="contact__social-icon">𝕏</span>
+              <span className="contact__social-icon"> <PiXLogo style={{ width: "25px", height: "30px", fill: "#ddddddff" }} /> </span>
               <span className="contact__social-label">Twitter</span>
             </a>
           </div>
@@ -67,7 +73,7 @@ export default function Contact() {
           <p className="contact__footer">
             Designed & Built by{' '}
             <a href="https://github.com/dharmapal">Dharmapal</a>
-            {' '}· 2025
+            {' '}· 2026
           </p>
 
         </div>

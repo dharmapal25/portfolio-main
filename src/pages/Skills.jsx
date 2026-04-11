@@ -133,6 +133,8 @@ const categories = [
 function Skills() {
   return (
     <section className="skills">
+            <title>Dharmapal | Skills</title>
+
       <div className="container">
 
         <p className="section-label">02. Skills</p>

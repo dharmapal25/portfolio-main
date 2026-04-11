@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import '../styles/Navbar.css'
+import { IoFlash } from 'react-icons/io5'
 
 const navLinks = [
+  { label: 'Home',    path: '/'    },
   { label: 'About',    path: '/about'    },
   { label: 'Skills',   path: '/skills'   },
   { label: 'Projects', path: '/projects' },
@@ -33,7 +35,8 @@ export default function Navbar() {
       <div className="navbar__inner">
         {/* LOGO */}
         <div className="navbar__logo" onClick={() => navigate('/')}>
-          DP<span>.dev</span>
+          Flash<span><IoFlash style={{fill : '#e67147e1',height : "19px",width : "20px"}} />dev</span>
+          {/* Flash<span><curent style={{fill : '#e67147e1',height : "19px",width : "20px"}} />dev</span> */}
         </div>
 
         {/* DESKTOP NAV */}

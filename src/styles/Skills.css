@@ -13,7 +13,7 @@
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 50px;
 }
 
 /* ── CARD ── */
@@ -71,7 +71,7 @@
 }
 
 .skills__item::before {
-  content: '*';
+  content: '✦';
   color: var(--accent);
   font-size: 16px;
   line-height: 1;
@@ -110,7 +110,13 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 928px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 929px) and (max-width: 1024px) {
   .skills__grid {
     grid-template-columns: repeat(2, 1fr);
   }

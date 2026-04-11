@@ -9,6 +9,8 @@ const facts = [
 export default function About() {
   return (
     <section className="about">
+      <title>Dharmapal | About</title>
+
       <div className="container">
         <div className="about__inner">
 

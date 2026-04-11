@@ -18,8 +18,10 @@
   --text-primary: #dbdbdb;
   --text-secondary: #888888;
   --text-muted: #4a607e;
-  --accent: #e67147e1;
-  --orange : #e66435;
+  /* --accent: #e67147e1; real*/
+  --accent: #fa855bf8;
+  /* --orange : #e66435;  real*/ 
+  --orange : #ff9974fb;
   --accent-dim: #ffc8b411;
   --accent-glow: #64ffda26;
 

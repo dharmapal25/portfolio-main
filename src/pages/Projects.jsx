@@ -1,4 +1,6 @@
+import { GrDomain, GrGithub } from 'react-icons/gr'
 import '../styles/Projects.css'
+import { BiGlobe } from 'react-icons/bi'
 
 const featured = {
   title:  'WhatsApp Clone — Real-time Chat App',
@@ -15,7 +17,7 @@ const projects = [
     desc:   'A Kanban-style project management board with drag-and-drop cards, multi-board support, and real-time updates.',
     tech:   ['React', 'Node.js', 'MongoDB', 'Express'],
     emoji:  '📋',
-    github: 'https://github.com/dharmapal',
+    github: 'https://github.com/dharmapal25',
     live:   '#',
   },
   {
@@ -47,6 +49,7 @@ const projects = [
 export default function Projects() {
   return (
     <section className="projects">
+            <title>Dharmapal | Projects</title>
       <div className="container" style={{ width: '100%', paddingTop: '100px', paddingBottom: '100px' }}>
 
         {/* SECTION HEADER */}
@@ -78,10 +81,10 @@ export default function Projects() {
 
             <div className="projects__links">
               <a href={featured.github} className="projects__link" target="_blank" rel="noopener noreferrer" title="GitHub">
-                ⌥ GitHub
+                <GrGithub/>
               </a>
               <a href={featured.live} className="projects__link" target="_blank" rel="noopener noreferrer" title="Live Demo">
-                ↗ Live Demo
+                <BiGlobe/>
               </a>
             </div>
           </div>
@@ -97,10 +100,10 @@ export default function Projects() {
                 <span className="project-card__folder">{project.emoji}</span>
                 <div className="project-card__links">
                   <a href={project.github} className="project-card__icon-link" target="_blank" rel="noopener noreferrer">
-                    ⌥
+                    <GrGithub/>
                   </a>
                   <a href={project.live} className="project-card__icon-link" target="_blank" rel="noopener noreferrer">
-                    ↗
+                    <BiGlobe/>
                   </a>
                 </div>
               </div>
@@ -109,7 +112,7 @@ export default function Projects() {
               <div className="project-card__tech">
                 {project.tech.map((t, i) => (
                   <span key={t}>
-                    {t}{i < project.tech.length - 1 ? <>&nbsp;·&nbsp;</> : ''}
+                    {t}{i < project.tech.length - 1 ? <>&nbsp;&nbsp;</> : ''}
                   </span>
                 ))}
               </div>
