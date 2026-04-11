@@ -8,21 +8,27 @@ export default function Home() {
     <main className="home">
       {/* BACKGROUND GRID */}
       <div className="home__bg" />
+      <div className="home__bg-2" />
 
       <div className="home__content">
 
         {/* GREETING */}
-        <p className="home__greeting">// Hello, World!</p>
+        <p className="home__greeting">Hello,</p>
 
         {/* NAME */}
         <h1 className="home__name">
-          Dharmapal.<span className="cursor">_</span>
+          Dharmapal<span className="cursor">_</span>
         </h1>
 
         {/* ROLE */}
         <h2 className="home__role">
           <span>Full-Stack</span> Developer.
         </h2>
+        {/* TAGLINE */}
+        <p className="home__tagline">
+          I build fast, scalable, real-world web apps —<br />
+          from pixel-perfect UIs to production-ready backends.
+        </p>
 
         {/* TECH STACK PILLS */}
         <div className="home__stack">
@@ -31,11 +37,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* TAGLINE */}
-        <p className="home__tagline">
-          I build fast, scalable, real-world web apps —<br />
-          from pixel-perfect UIs to production-ready backends.
-        </p>
 
         {/* CTA BUTTONS */}
         <div className="home__buttons">
@@ -43,7 +44,7 @@ export default function Home() {
             className="btn-secondary"
             onClick={() => navigate('/projects')}
           >
-            View My Work →
+            View My Work ↗
           </button>
           <button
             className="btn-primary"
