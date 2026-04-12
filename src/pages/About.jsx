@@ -14,14 +14,12 @@ export default function About() {
       <div className="container">
         <div className="about__inner">
 
-          {/* SECTION HEADER */}
           <p className="section-label">01. About Me</p>
           <h2 className="section-title">Who I <span>Am</span></h2>
           <div className="section-divider" />
 
           <div className="about__grid">
 
-            {/* LEFT — TEXT */}
             <div className="about__text">
               <p>
                 Hey! I'm <strong>Dharmapal</strong>, a passionate full-stack developer
@@ -39,7 +37,6 @@ export default function About() {
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat nam nesciunt commodi vel sapiente hic, explicabo, facilis ratione distinctio necessitatibus repudiandae aperiam, culpa fugit illum laborum! Nulla, dignissimos quis!
               </p>
 
-              {/* QUICK FACTS */}
               <div className="about__facts">
                 {facts.map(fact => (
                   <div key={fact} className="about__fact">{fact}</div>
@@ -47,19 +44,10 @@ export default function About() {
               </div>
             </div>
 
-            {/* RIGHT — PHOTO */}
             <div className="about__photo-wrap">
               <div className="about__photo-frame">
-                {/*
-                  Replace src with your actual photo path, e.g.:
-                  <img src="/assets/photo.jpg" alt="Dharmapal" />
-                */}
                 <div className="about__photo-placeholder">
-                  {/* <div className="avatar-icon">👨‍💻</div> */}
-                  {/* <span>Add your photo here</span> */}
-                  {/* <code> */}
                     <img src={photo} draggable="false" />
-                  {/* </code> */}
                 </div>
               </div>
             </div>

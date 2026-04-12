@@ -4,16 +4,16 @@ import '../styles/Navbar.css'
 import { IoFlash } from 'react-icons/io5'
 
 const navLinks = [
-  { label: 'Home',    path: '/'    },
-  { label: 'About',    path: '/about'    },
-  { label: 'Skills',   path: '/skills'   },
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
+  { label: 'Skills', path: '/skills' },
   { label: 'Projects', path: '/projects' },
-  { label: 'Contact',  path: '/contact'  },
+  { label: 'Contact', path: '/contact' },
 ]
 
 export default function Navbar() {
-  const [scrolled,    setScrolled]    = useState(false)
-  const [menuOpen,    setMenuOpen]    = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         {/* LOGO */}
         <div className="navbar__logo" onClick={() => navigate('/')}>
-          Flash<span><IoFlash style={{fill : '#e67147e1',height : "19px",width : "20px"}} />dev</span>
+          Flash<span><IoFlash style={{ fill: '#e67147e1', height: "19px", width: "20px" }} />dev</span>
           {/* Flash<span><curent style={{fill : '#e67147e1',height : "19px",width : "20px"}} />dev</span> */}
         </div>
 

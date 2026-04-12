@@ -1,7 +1,3 @@
-/* ═══════════════════════════════════════
-   CONTACT CSS
-   ═══════════════════════════════════════ */
-
 .contact {
   min-height: 100vh;
   padding: 100px 0;
@@ -47,23 +43,7 @@
   margin-right: auto;
 }
 
-/* EMAIL BUTTON */
 .contact__email-btn {
-  /* display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 36px;
-  background: transparent;
-  border: 1.5px solid var(--accent);
-  color: var(--accent);
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: all var(--transition);
-  text-decoration: none;
-  margin-bottom: 56px; */
     display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -89,7 +69,6 @@
   transform: translateY(-3px);
 }
 
-/* SOCIAL LINKS */
 .contact__social {
   display: flex;
   justify-content: center;
@@ -122,14 +101,12 @@
   letter-spacing: 1px;
 }
 
-/* DIVIDER */
 .contact__divider {
   width: 1px;
   height: 32px;
   background: var(--border);
 }
 
-/* FOOTER LINE */
 .contact__footer {
   font-family: var(--font-display);
   font-size: 12px;

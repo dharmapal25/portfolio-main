@@ -1,8 +1,6 @@
 import { LiaLinkedin } from 'react-icons/lia'
 import '../styles/Contact.css'
 import { GrGithub } from 'react-icons/gr'
-import { BiX } from 'react-icons/bi'
-import { FaX } from 'react-icons/fa6'
 import { PiXLogo } from 'react-icons/pi'
 
 export default function Contact() {
@@ -24,7 +22,6 @@ export default function Contact() {
             my inbox is always open!
           </p>
 
-          {/* EMAIL CTA */}
           <a
             href="mailto:dharmapal@email.com"
             className="contact__email-btn"
@@ -32,7 +29,6 @@ export default function Contact() {
            Say Hello
           </a>
 
-          {/* SOCIAL LINKS */}
           <div className="contact__social">
             <a
               href="https://github.com/dharmapal"
@@ -69,7 +65,6 @@ export default function Contact() {
             </a>
           </div>
 
-          {/* FOOTER */}
           <p className="contact__footer">
             Designed & Built by{' '}
             <a href="https://github.com/dharmapal">Dharmapal</a>

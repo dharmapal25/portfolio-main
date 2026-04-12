@@ -1,7 +1,3 @@
-/* ═══════════════════════════════════════
-   ABOUT CSS
-   ═══════════════════════════════════════ */
-
 .about {
   min-height: 100vh;
   padding: 100px 0;
@@ -21,7 +17,6 @@
   align-items: center;
 }
 
-/* LEFT — TEXT CONTENT */
 .about__text p {
   font-size: 16px;
   color: var(--text-secondary);
@@ -40,7 +35,6 @@
   font-size: 14px;
 }
 
-/* QUICK FACTS */
 .about__facts {
   margin-top: 32px;
   display: grid;
@@ -93,7 +87,6 @@
   filter: grayscale(0%);
 }
 
-/* Accent border offset */
 .about__photo-wrap::before {
   content: '';
   position: absolute;
@@ -110,7 +103,6 @@
   inset: -14px;
 }
 
-/* PLACEHOLDER when no image */
 .about__photo-placeholder {
   width: 100%;
   height: 100%;
@@ -135,7 +127,6 @@
   font-size: 36px;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .about__grid {
     grid-template-columns: 1fr;

@@ -57,14 +57,11 @@ export default function Projects() {
         <h2 className="section-title">Things I've <span>Built</span></h2>
         <div className="section-divider" />
 
-        {/* ── FEATURED PROJECT ── */}
         <div className="projects__featured">
-          {/* IMAGE / PREVIEW */}
           <div className="projects__featured-img">
             <div className="project-img-placeholder">{featured.emoji}</div>
           </div>
 
-          {/* INFO */}
           <div className="projects__featured-info">
             <p className="projects__featured-label">⭐ Featured Project</p>
             <h3 className="projects__featured-title">{featured.title}</h3>

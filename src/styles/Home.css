@@ -1,7 +1,3 @@
-/* ═══════════════════════════════════════
-   HOME / HERO CSS
-   ═══════════════════════════════════════ */
-
 .home {
   min-height: 100vh;
   display: flex;
@@ -9,17 +5,12 @@
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-height);
-  /* box-shadow: -10px -10px 100px #c7b2aada; */
 
 }
 
-/* ── BACKGROUND GRID ── */
 .home__bg {
   position: absolute;
   inset: 0;
-  /* background-image:
-    linear-gradient(#64ffda08 1px, transparent 1px),
-    linear-gradient(90deg, #64ffda08 1px, transparent 1px); */
   background-image:
     linear-gradient(#cc53270a 1px, transparent 1px),
     linear-gradient(90deg, #581b0525 1px, transparent 1px);
@@ -27,7 +18,6 @@
   z-index: 0;
 }
 
-/* Radial glow center */
 .home__bg::after {
   content: '';
   position: absolute;
@@ -51,7 +41,6 @@
   pointer-events: none;
 }
 
-/* ── CONTENT ── */
 .home__content {
   position: relative;
   z-index: 1;
@@ -61,7 +50,6 @@
   width: 100%;
 }
 
-/* GREETING */
 .home__greeting {
   font-family: var(--font-display);
   font-size: 15px;
@@ -73,7 +61,6 @@
   animation-delay: 0.1s;
 }
 
-/* NAME */
 .home__name {
   font-family: var(--font-display);
   font-size: clamp(52px, 8vw, 82px);
@@ -85,13 +72,11 @@
   animation-delay: 0.2s;
 }
 
-/* CURSOR BLINK */
 .home__name .cursor {
   color: var(--orange);
   animation: blink 1s step-end infinite;
 }
 
-/* ROLE */
 .home__role {
   font-family: var(--font-display);
   font-size: clamp(22px, 3.5vw, 38px);
@@ -106,7 +91,6 @@
   color: var(--orange);
 }
 
-/* TAGLINE */
 .home__tagline {
   font-family: var(--font-body);
   font-size: 17px;
@@ -119,7 +103,6 @@
   animation-delay: 0.4s;
 }
 
-/* BUTTONS */
 .home__buttons {
   display: flex;
   gap: 16px;
@@ -128,7 +111,6 @@
   animation-delay: 0.5s;
 }
 
-/* SCROLL INDICATOR */
 .home__scroll {
   position: absolute;
   bottom: 32px;
@@ -178,7 +160,6 @@
   }
 }
 
-/* TECH STACK PILL ROW */
 .home__stack {
   display: flex;
   gap: 10px;
@@ -199,7 +180,6 @@
   letter-spacing: 0.3px;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .home__content {
     padding: 0 20px;
