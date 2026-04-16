@@ -54,7 +54,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/resume.pdf"
+          href="https://ik.imagekit.io/cblndrocc/Dharmapal_Resume.pdf"
           className="navbar__resume"
           target="_blank"
           rel="noopener noreferrer"

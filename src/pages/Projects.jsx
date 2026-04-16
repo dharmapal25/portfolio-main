@@ -3,57 +3,41 @@ import '../styles/Projects.css'
 import { BiGlobe } from 'react-icons/bi'
 
 const featured = {
-  title:  'WhatsApp Clone — Real-time Chat App',
-  desc:   'A full-stack real-time messaging application built with MERN Stack and Socket.IO. Features include live messaging, user authentication, online status indicators, read receipts, and a responsive mobile-first UI.',
-  tech:   ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO', 'JWT'],
-  emoji:  '💬',
-  github: 'https://github.com/dharmapal',
-  live:   '#',
+  title: 'Chat-Room Hub (Real-time Chat) ',
+  desc: 'Built a full-stack real-time chat platform where users can create and join public or private rooms with owner controlled access. Engineered with Socket.IO for live messaging, JWT + Redis-backed rate limiting for security, and shipped as a PWA for mobile install.',
+  tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO', 'JWT'],
+  emoji: '💬 ',
+  github: 'https://github.com/dharmapal25/ChatRoom',
+  live: 'https://chatroom-hub.vercel.app/',
 }
 
 const projects = [
   {
-    title:  'Trello Clone — Task Manager',
-    desc:   'A Kanban-style project management board with drag-and-drop cards, multi-board support, and real-time updates.',
-    tech:   ['React', 'Node.js', 'MongoDB', 'Express'],
-    emoji:  '📋',
+    title: 'Flash OS - (Web Operating System)',
+    desc: 'Built a macOS-inspired Web OS in React with draggable/resizable windows, built-in apps like Notepad, Terminal, Music and more, persistent themes & wallpapers, and a responsive UI with macOS-style dock.',
+    tech: ['React', 'react-rnd',"css"],
+    emoji: '📋',
     github: 'https://github.com/dharmapal25',
-    live:   '#',
+    live: 'https://flashos.vercel.app/',
   },
   {
-    title:  'Linked List Visualizer',
-    desc:   'Interactive DOM-based visualization of Linked List operations — insert, delete, reverse — built with vanilla JavaScript.',
-    tech:   ['JavaScript', 'HTML5', 'CSS3', 'DOM API'],
-    emoji:  '🔗',
+    title: 'Linked List Visualizer',
+    desc: 'Interactive DOM-based visualization of Linked List operations — insert, delete, reverse — built with vanilla JavaScript.',
+    tech: ['JavaScript', 'HTML5', 'CSS3', 'DOM API'],
+    emoji: '🔗',
     github: 'https://github.com/dharmapal',
-    live:   '#',
-  },
-  {
-    title:  'Belagavi City Website',
-    desc:   'Hackathon project — a dynamic city/college portal for Belagavi with events, tourism info, and responsive design.',
-    tech:   ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-    emoji:  '🏙️',
-    github: 'https://github.com/dharmapal',
-    live:   '#',
-  },
-  {
-    title:  'Dev Portfolio — This Site!',
-    desc:   'My personal portfolio built with React Router, pure CSS, and smooth animations. Fully responsive with dark theme.',
-    tech:   ['React', 'React Router', 'CSS3', 'Vite'],
-    emoji:  '🚀',
-    github: 'https://github.com/dharmapal',
-    live:   '#',
+    live: '#',
   },
 ]
 
 export default function Projects() {
   return (
     <section className="projects">
-            <title>Dharmapal | Projects</title>
-      <div className="container" style={{ width: '100%', paddingTop: '100px', paddingBottom: '100px' }}>
+      <title>Dharmapal | Projects</title>
+      <div className="container" style={{ width: '100%', paddingTop: '30px', paddingBottom: '100px' }}>
 
         {/* SECTION HEADER */}
-        <p className="section-label">03. Projects</p>
+        {/* <p className="section-label">03. Projects</p> */}
         <h2 className="section-title">Things I've <span>Built</span></h2>
         <div className="section-divider" />
 
@@ -78,10 +62,10 @@ export default function Projects() {
 
             <div className="projects__links">
               <a href={featured.github} className="projects__link" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <GrGithub/>
+                <GrGithub />
               </a>
               <a href={featured.live} className="projects__link" target="_blank" rel="noopener noreferrer" title="Live Demo">
-                <BiGlobe/>
+                <BiGlobe />
               </a>
             </div>
           </div>
@@ -97,10 +81,10 @@ export default function Projects() {
                 <span className="project-card__folder">{project.emoji}</span>
                 <div className="project-card__links">
                   <a href={project.github} className="project-card__icon-link" target="_blank" rel="noopener noreferrer">
-                    <GrGithub/>
+                    <GrGithub />
                   </a>
                   <a href={project.live} className="project-card__icon-link" target="_blank" rel="noopener noreferrer">
-                    <BiGlobe/>
+                    <BiGlobe />
                   </a>
                 </div>
               </div>

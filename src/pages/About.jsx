@@ -14,7 +14,7 @@ export default function About() {
       <div className="container">
         <div className="about__inner">
 
-          <p className="section-label">01. About Me</p>
+          <p className="section-label">About Me</p>
           <h2 className="section-title">Who I <span>Am</span></h2>
           <div className="section-divider" />
 

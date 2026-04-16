@@ -10,8 +10,8 @@ const categories = [
   {
     title: 'Frontend',
     skills: [
-      { name: 'HTML5', icon: <FaHtml5 style={{ fill: "#ffc369ff", height: "30px", width: "20px" }} /> },
-      { name: 'CSS3', icon: <FaCss3Alt style={{ fill: "#fdb9ffff", height: "30px", width: "20px" }} /> },
+      { name: 'HTML5', icon: <FaHtml5 style={{ fill: "#aa4618ff", height: "30px", width: "20px" }} /> },
+      { name: 'CSS3', icon: <FaCss3Alt style={{ fill: "#811b85ff", height: "30px", width: "20px" }} /> },
       { name: 'JavaScript', icon: <SiJavascript style={{ fill: "#ebff33ff", height: "30px", width: "20px" }} /> },
       { name: 'React', icon: <FaReact style={{ fill: "#69faffff", height: "30px", width: "20px" }} /> },
       { name: 'GSAP', icon: <SiGreensock style={{ fill: "#24d600ff", height: "30px", width: "23px" }} /> },
@@ -47,7 +47,7 @@ function Skills() {
 
       <div className="container">
 
-        <p className="section-label">02. Skills</p>
+        <p className="section-label">Skills</p>
         <h2 className="section-title">What I <span>Work With</span></h2>
         <div className="section-divider" />
 

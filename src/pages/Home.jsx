@@ -11,7 +11,7 @@ export default function Home() {
 
       <div className="home__content">
 
-        <p className="home__greeting">Hello,</p>
+        <p className="home__greeting">Hello, <span style={{color : "#fff", fontSize : "20px" }} >I'm</span></p>
 
         <h1 className="home__name">
           Dharmapal<span className="cursor">_</span>

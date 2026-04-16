@@ -11,9 +11,12 @@
 .home__bg {
   position: absolute;
   inset: 0;
-  background-image:
+  /* background-image:
     linear-gradient(#cc53270a 1px, transparent 1px),
-    linear-gradient(90deg, #581b0525 1px, transparent 1px);
+    linear-gradient(90deg, #581b0525 1px, transparent 1px); */
+  background-image:
+    linear-gradient(#ff8a5f0a 1px, transparent 1px),
+    linear-gradient(90deg, #83290925 1px, transparent 1px);
   background-size: 90px 90px;
   z-index: 0;
 }
@@ -23,7 +26,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-100%, -105%);
+  transform: translate(-105%, -104%);
   width: 600px;
   height: 600px;
   background: radial-gradient(circle, #cc532779 0%, transparent 60%);
@@ -34,7 +37,7 @@
   position: absolute;
   top: 90%;
   left: 100%;
-  transform: translate(-70%, -30%);
+  transform: translate(-80%, -50%);
   width: 600px;
   height: 600px;
   background: radial-gradient(circle, #cc53272c 0%, transparent 70%);

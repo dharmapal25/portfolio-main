@@ -14,8 +14,6 @@ export default function Contact() {
       <div className="container">
         <div className="contact__inner">
 
-          <p className="contact__overline">04. What's Next?</p>
-
           <h2 className="contact__heading">
             Let's <span>Build</span><br />Something Great.
           </h2>
@@ -39,7 +37,7 @@ export default function Contact() {
 
           <div className="contact__social">
             <a
-              href="https://github.com/dharmapal"
+              href="https://github.com/dharmapal25"
               className="contact__social-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +51,7 @@ export default function Contact() {
             <div className="contact__divider" />
 
             <a
-              href="https://linkedin.com/in/dharmapal"
+              href="https://www.linkedin.com/in/dharmapal-bharati-5b48b8326/"
               className="contact__social-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,9 +62,9 @@ export default function Contact() {
               <span className="contact__social-label">LinkedIn</span>
             </a>
 
-            <div className="contact__divider" />
+            {/* <div className="contact__divider" /> */}
 
-            <a
+            {/* <a
               href="https://twitter.com/dharmapal"
               className="contact__social-link"
               target="_blank"
@@ -76,12 +74,13 @@ export default function Contact() {
                 <PiXLogo style={{ width: "25px", height: "30px", fill: "#ddddddff" }} />
               </span>
               <span className="contact__social-label">Twitter</span>
-            </a>
+            </a> */}
+
           </div>
 
           <p className="contact__footer">
             Designed & Built by{' '}
-            <a href="https://github.com/dharmapal">Dharmapal</a>
+            <a href="https://github.com/dharmapal25">Dharmapal</a>
             {' '}· 2026
           </p>
 
