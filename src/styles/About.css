@@ -12,8 +12,16 @@
 .about__grid {
   display: flex;
   gap: 72px;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+
+.about__text {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about__text p {
@@ -62,6 +70,7 @@
   position: relative;
   animation: fadeUp 0.8s ease both;
   animation-delay: 0.3s;
+  width: 80%;
 }
 
 .about__photo-frame {
@@ -100,7 +109,7 @@
 .profile {
   scale: 0;
   transition: 1s;
-  
+
 }
 
 .profile:hover {
@@ -122,15 +131,15 @@
   transition: 1s;
   scale: 1.04;
   filter: brightness(95%);
-  
+
 }
 
 
 .about__photo-placeholder:hover {
   filter: brightness(100%);
-transition: 0.5s;
-scale: 1.07;
-transform: translateY(-10px);
+  transition: 0.5s;
+  scale: 1.07;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 900px) {
@@ -139,6 +148,7 @@ transform: translateY(-10px);
     margin-top: 50px;
     gap: 48px;
   }
+
   .about__photo-wrap {
     max-width: 280px;
     margin: 0 auto;
@@ -146,5 +156,7 @@ transform: translateY(-10px);
 }
 
 @media (max-width: 480px) {
-  .about__facts { grid-template-columns: 1fr; }
+  .about__facts {
+    grid-template-columns: 1fr;
+  }
 }

@@ -34,9 +34,9 @@ export default function About() {
                 and interactive UIs. I also have a keen eye for clean design and
                 smooth user experiences.
               </p>
-              <p>
+              {/* <p>
               ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat nam nesciunt commodi vel sapiente hic, explicabo, facilis ratione distinctio necessitatibus repudiandae aperiam, culpa fugit illum laborum! Nulla, dignissimos quis!
-              </p>
+              </p> */}
 
               <div className="about__facts">
                 {facts.map(fact => (

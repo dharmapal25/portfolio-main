@@ -8,24 +8,31 @@ gsap.registerPlugin(ScrollTrigger);
 const timelineData = [
   {
     id: 1,
-    title: 'Software Engineer Intern',
-    company: 'Wemco Limited',
-    period: '2022 - 2023',
-    description: 'Worked with team to build high-performance apps, integrated AI features and improved engagement by 10%.',
+    title: 'Cyber Security Intern',
+    company: 'Eyesec Cyber Security Solutions Pvt. Ltd."',
+    period: 'Dec 2024 – Apr 2025',
+    description: 'Completed 640 hours (16 weeks) of internship on Cyber Security. Worked on real-world security concepts as per DTE, Bengaluru guidelines.',
   },
   {
     id: 2,
-    title: 'Graduate Engineer Trainee',
-    company: 'HCL Technologies',
-    period: '2023 - 2024',
-    description: 'Worked as a Tester on a large Scale Life Science Project. Developed test cases, executed tests, and reported bugs to ensure quality.',
+    title: '🥇 1st Place – Bug Hunt',
+    company: 'DevXcel 2024-25 | Shri Vasantrao Potdar Polytechnic',
+    period: 'March 2025',
+    description: 'Secured 1st place in Bug Hunt event at National Level Technical Fest organized by Dept. of CSE, Belagavi.',
   },
   {
     id: 3,
-    title: 'Software Developer',
-    company: 'Simpl itech',
-    period: '2024 - 2025',
-    description: 'Implemented UI features, fixed bugs, and contributed to scalable development.',
+    title: 'Certificate of Merit – Idea Presentation',
+    company: 'Technovision-24 | Hirasugar Institute of Technology',
+    period: 'April 2024',
+    description: 'Participated in Project Exhibition / Idea Presentation competition and secured a prize at the national level fest.',
+  },
+  {
+    id: 4,
+    title: 'National Hackathon Finalist',
+    company: 'India Innovates 2026 | Bharat Mandapam, New Delhi"',
+    period: 'March 2026',
+    description: 'Selected as a finalist in the prestigious India Innovates Hackathon, showcasing innovative solutions to national challenges at Bharat Mandapam, New Delhi.',
   },
 ];
 
@@ -65,7 +72,7 @@ export default function Timeline() {
 
   return (
     <div ref={timelineRef} className="timeline">
-      <h3 className="timeline__title">Experience & Journey</h3>
+      <h3 className="timeline__title">Achievements</h3>
       <div className="timeline__container">
         <div className="timeline__line" />
         <div className="timeline__items">
