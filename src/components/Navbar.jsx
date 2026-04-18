@@ -31,7 +31,7 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled && 'scrolled'}`}>
       <div className="navbar__inner">
         {/* LOGO */}
         <div className="navbar__logo" onClick={() => navigate('/')}>

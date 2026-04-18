@@ -1,5 +1,6 @@
 import '../styles/About.css'
 import photo from "../../public/assets/photo.jpg"
+import Timeline from '../components/Timeline'
 const facts = [
   'LIT Lucknow — B.Tech CSE',
   '2nd Year Student',
@@ -34,7 +35,7 @@ export default function About() {
                 smooth user experiences.
               </p>
               <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat nam nesciunt commodi vel sapiente hic, explicabo, facilis ratione distinctio necessitatibus repudiandae aperiam, culpa fugit illum laborum! Nulla, dignissimos quis!
+              ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat nam nesciunt commodi vel sapiente hic, explicabo, facilis ratione distinctio necessitatibus repudiandae aperiam, culpa fugit illum laborum! Nulla, dignissimos quis!
               </p>
 
               <div className="about__facts">
@@ -53,6 +54,9 @@ export default function About() {
             </div>
 
           </div>
+
+          {/* Achievement section hackathons, interships */}
+          <Timeline />
         </div>
       </div>
     </section>
