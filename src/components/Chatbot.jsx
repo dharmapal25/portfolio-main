@@ -16,13 +16,13 @@ const Chatbot = () => {
         error
     } = useAiResponse();
 
-    // Keep the latest user or AI message visible automatically.
+    // latest message visible automatically.
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({
             behavior: "smooth",
-              block: "nearest"
+            block: "nearest"
         });
-    }, [messages,loading]);
+    }, [messages, loading]);
 
     const options = [
         {
@@ -43,26 +43,29 @@ const Chatbot = () => {
         }
     ];
 
-    const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!message.trim() || loading) return;
 
         const userMessage = message.trim();
-
         setMessage("");
 
-        // Send the user's message and add both messages to the chat.
+        setMessages((prev) => [
+            ...prev,
+            {
+                role: "user",
+                content: userMessage
+            }
+        ]);
+
+        // AI response fetch 
         const data = await fetchResponse(userMessage);
 
         if (!data) return;
 
         setMessages((prev) => [
             ...prev,
-            {
-                role: "user",
-                content: data.message
-            },
             {
                 role: "ai",
                 content: data.ai
@@ -73,17 +76,20 @@ const Chatbot = () => {
     const handleOption = async (prompt) => {
         if (loading) return;
 
-        // Quick options use the same AI request flow as the textarea.
+        setMessages((prev) => [
+            ...prev,
+            {
+                role: "user",
+                content: prompt
+            }
+        ]);
+
         const data = await fetchResponse(prompt);
 
         if (!data) return;
 
         setMessages((prev) => [
             ...prev,
-            {
-                role: "user",
-                content: data.message
-            },
             {
                 role: "ai",
                 content: data.ai
@@ -110,6 +116,7 @@ const Chatbot = () => {
 
                     <div className="messages">
 
+
                         {messages.map((msg, index) => (
                             <div
                                 key={index}
@@ -123,6 +130,8 @@ const Chatbot = () => {
                             </div>
                         ))}
 
+                        
+
                         {loading && (
                             <div className="message-row ai">
                                 <div className="message-bubble chat-loading">
@@ -134,6 +143,7 @@ const Chatbot = () => {
                         <div ref={messagesEndRef} />
 
                     </div>
+
 
                     {error && (
                         <div className="message-row ai">

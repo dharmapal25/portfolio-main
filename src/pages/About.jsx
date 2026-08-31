@@ -3,6 +3,7 @@ import '../styles/App.css'
 import photo from "../../public/assets/Jod.png"
 import Timeline from '../components/Timeline'
 import ColorBends from '../components/Libraries/ColorBends'
+
 const facts = [
   'LIT Lucknow — B.Tech CSE',
   '3nd Year Student',
