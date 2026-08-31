@@ -12,4 +12,10 @@ app.use(cors({
 
 app.use("/api", aiRoute);
 
+app.get("/api/me", (req, res) => {
+    res.json({
+        message: "Hello!"
+    })
+})
+
 module.exports = app

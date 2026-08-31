@@ -2,23 +2,34 @@ import { useNavigate } from 'react-router-dom'
 import '../styles/Home.css'
 import Threads from '../components/Libraries/Threads'
 import Chatbot from '../components/Chatbot'
+import API from '../services/api'
+import { useEffect } from 'react'
 
 
 
 export default function Home() {
   const navigate = useNavigate()
 
+
+  useEffect(() => {
+
+    API.get("/me")
+      .then((data) => {
+        console.log(data.data.message)
+      })
+  }, [])
+
   return (
     <main className="home">
 
-<div style={{ width: '100%', height: '600px', position: 'absolute',top : "10%" }}>
-  <Threads
-    amplitude={1}
-    distance={0.3}
-    enableMouseInteraction
-    
-  />
-</div>
+      <div style={{ width: '100%', height: '600px', position: 'absolute', top: "10%" }}>
+        <Threads
+          amplitude={1}
+          distance={0.3}
+          enableMouseInteraction
+
+        />
+      </div>
 
 
       <div className="home__content">
@@ -35,7 +46,8 @@ export default function Home() {
           Applications.<span className="cursor">_</span>
         </h1> */}
 
-        <Chatbot/>
+
+        <Chatbot />
 
         <h2 className="home__role">
           <span>Full-Stack</span> Developer.

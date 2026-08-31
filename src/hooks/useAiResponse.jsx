@@ -14,8 +14,6 @@ const useAiResponse = () => {
                 message
             });
 
-            console.log("API RESPONSE:", res.data);
-
             return res.data;
 
         } catch (err) {
