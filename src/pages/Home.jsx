@@ -33,20 +33,6 @@ export default function Home() {
 
 
       <div className="home__content">
-
-        <p className="home__greeting"><span style={{ color: "#fff", fontSize: "20px" }} ></span></p>
-
-        {/* <h1 className="home__name">
-          Turning Ideas Into Production -Ready{' '}
-          <span className="web-tag">
-            <span className="web-tag__bracket">&lt;</span>
-            <span className="web-tag__text">Web</span>
-            <span className="web-tag__bracket">/&gt;</span>
-          </span>{' '}
-          Applications.<span className="cursor">_</span>
-        </h1> */}
-
-
         <Chatbot />
 
         <h2 className="home__role">

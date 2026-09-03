@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import useAiResponse from "../hooks/useAiResponse";
-import "./Chatbot.css";
+import "../styles/Chatbot.css";
 
 const Chatbot = () => {
     const [message, setMessage] = useState("");

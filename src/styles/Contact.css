@@ -90,8 +90,9 @@
 
 .contact__social-label {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
+  color: #ccc
 }
 
 .contact__divider {

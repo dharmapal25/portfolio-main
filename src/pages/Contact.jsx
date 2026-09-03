@@ -48,7 +48,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <span className="contact__social-icon">
-                  <GrGithub style={{ width: "25px", height: "30px", fill: "#c0c0c0ff" }} />
+                  <GrGithub style={{ width: "25px", height: "30px", fill: "#ccc" }} />
                 </span>
                 <span className="contact__social-label">GitHub</span>
               </a>
@@ -56,13 +56,13 @@ export default function Contact() {
               <div className="contact__divider" />
 
               <a
-                href="https://www.linkedin.com/in/dharmapal-bharati-5b48b8326/"
+                href="https://www.linkedin.com/in/dharmapal25/"
                 className="contact__social-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="contact__social-icon">
-                  <LiaLinkedin style={{ width: "35px", height: "30px", fill: "#96afffea" }} />
+                  <LiaLinkedin style={{ width: "35px", height: "30px", fill: "#0063C2" }} />
                 </span>
                 <span className="contact__social-label">LinkedIn</span>
               </a>
